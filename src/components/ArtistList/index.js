@@ -1,6 +1,6 @@
 import React from "react";
 
-import ListItem from '../Components/ListItem';
+import ListItem from '../ListItem';
 
 const ArtistList = ({ discography }) => {
     console.log(discography)

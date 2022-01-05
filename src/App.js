@@ -1,7 +1,6 @@
 import React from "react";
 
-import Artist from './Components/Artist';
-import LyricsGenerator from "./Components/LyricsGenerator";
+import { Artist, LyricsGenerator } from './components';
 
 const artistData = {
     name: "Logic",

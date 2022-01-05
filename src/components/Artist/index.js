@@ -1,7 +1,7 @@
 import React from "react";
 
-import ArtistCard from "../Components/ArtistCard";
-import ArtistList from "../Components/ArtistList";
+import ArtistCard from "../ArtistCard";
+import ArtistList from "../ArtistList";
 
 const Artist = ({ name, profileUrl, genre, intro, discography }) => {
     return (

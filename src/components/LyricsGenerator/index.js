@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useDidMountEffect from '../Hooks/useDidMountEffect';
+import useDidMountEffect from '../../Hooks/useDidMountEffect';
 
 const LyricsGenerator = () => {
     const [artistInput, setArtistInput] = useState("");
