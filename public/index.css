@@ -1,0 +1,60 @@
+html {
+    background-color: white;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-picture {
+    width: 300px;
+    word-wrap: normal;
+}
+
+.card-intro {
+    width: 50%;
+}
+
+.lyrics-generator {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyrics-generator > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyrics-generator > form > *:not(:last-child) {
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    width: 70%;
+}
+
+.lyrics-container {
+    padding: 20px 20px 0px 20px;
+}
+
+.album-grid {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
