@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import useDidMountEffect from '../../Hooks/useDidMountEffect';
 
 const LyricsGenerator = () => {
     const [artistInput, setArtistInput] = useState("");
     const [titleInput, setTitleInput] = useState("");
     const [lyrics, setLyrics] = useState("");
+
+    const navigate = useNavigate();
 
     const handleArtistInput = e => setArtistInput(e.target.value);
     const handleTitleInput = e => setTitleInput(e.target.value);
@@ -36,6 +39,12 @@ const LyricsGenerator = () => {
     
     return (
         <div className='lyrics-generator'>
+            <nav className="nav-bar">
+                <Link to="/">Home</Link>
+                <Link to="/lyrics">Lyrics Generator</Link>
+                <Link to="/artist">Artist</Link>
+                <button onClick={() => navigate(-1)}>Go back</button>
+            </nav>
             <form onSubmit={handleFormSubmit}>
                 <h2>Insert an artist and title to retrieve the song's lyrics!</h2>
                 <label htmlFor='artist'>Artist</label>

@@ -8,6 +8,11 @@ html {
     align-items: center;
 }
 
+.nav-bar {
+    border-bottom: solid 1px;
+    padding-bottom: 1rem;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
