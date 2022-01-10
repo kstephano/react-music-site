@@ -1,0 +1,32 @@
+.artist-container {
+    margin-top: 3rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-container > * {
+    margin-bottom: .5rem;
+}
+
+.card-picture {
+    width: 300px;
+    word-wrap: normal;
+}
+
+.card-intro {
+    width: 50%;
+}
+
+.album-grid {
+    display: grid;
+    gap: .5rem;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}

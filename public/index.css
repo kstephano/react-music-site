@@ -1,65 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import './variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    background-color: white;
+    height: 100%;
+    width: 100%;
+    background-color: var(--sandy-brown);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button {
+    color: white;
+    background-color: var(--indigo-dye);
+    border-radius: 5px;
+    padding: 3px 7px 3px 7px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button:hover {
+    background-color: var(--sandy-brown);
+    color: var(--indigo-dye)
 }
 
 #root {
     display: flex;
     flex-direction: column;
+    height: 100%;
     align-items: center;
 }
 
 .nav-bar {
-    border-bottom: solid 1px;
-    padding-bottom: 1rem;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-.card-picture {
-    width: 300px;
-    word-wrap: normal;
-}
-
-.card-intro {
-    width: 50%;
-}
-
-.lyrics-generator {
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lyrics-generator > form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lyrics-generator > form > *:not(:last-child) {
-    box-sizing: border-box;
-    width: 300px;
-    margin-bottom: 10px;
-}
-
-#submit-btn {
-    width: 70%;
-}
-
-.lyrics-container {
-    padding: 20px 20px 0px 20px;
-}
-
-.album-grid {
-    display: grid;
-    justify-items: center;
-    padding: 20px;
+    background-color: var(--lemon-meringue);
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 1rem 0 1rem 0;
+    font-weight: 700;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+}
+
+.nav-bar > *:not(:last-child) {
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+
+.nav-bar > *:not(:first-child) {
+    padding-left: 10px;
+}
+
+.nav-bar > *:last-child {
+    margin-left: 20px;
+}
+
+.text-link {
+    color: var(--indigo-dye);
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 35px;
+    background-color: var(--indigo-dye);
+    color: white;
+    padding: 5px 20px;
 }

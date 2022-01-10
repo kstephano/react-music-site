@@ -1,0 +1,52 @@
+.lyrics-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lyrics-generator {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    padding-bottom: 100px;
+}
+
+.lyrics-generator > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lyrics-generator > form > *:not(:last-child) {
+    box-sizing: border-box;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.text-input {
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#submit-btn {
+    background-color: var(--indigo-dye);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 15px 3px 15px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#submit-btn:hover {
+    background-color: var(--lemon-meringue);
+    color: var(--indigo-dye)
+}
+
+.lyrics-p {
+    padding: 15px;
+}
