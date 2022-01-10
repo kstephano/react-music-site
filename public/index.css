@@ -83,4 +83,5 @@ button:hover {
     background-color: var(--indigo-dye);
     color: white;
     padding: 5px 20px;
+    margin-top: auto;
 }

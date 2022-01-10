@@ -1,5 +1,5 @@
 .artist-container {
-    margin-top: 3rem;
+    width: 100%;
 }
 
 .card-container {
@@ -19,7 +19,7 @@
 }
 
 .card-intro {
-    width: 50%;
+    max-width: 50%;
 }
 
 .album-grid {
