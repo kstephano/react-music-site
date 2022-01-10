@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux';
+
 import { CREATE_ARTIST, DELETE_ARTIST, UPDATE_ARTIST } from './actions';
 import { merge } from '../helpers/index';
 
@@ -16,7 +18,7 @@ const artistReducer = (state = [], action) => {
     }
 }
 
-const combinedReducer = combinedReducers({
+const combinedReducer = combineReducers({
     artists: artistReducer
 });
 

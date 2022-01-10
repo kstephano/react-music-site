@@ -11,7 +11,7 @@ import store from './redux/store';
 const rootElement = document.getElementById('root');
 
 render(
-    <Provider>
+    <Provider store={store}>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App/>} />
