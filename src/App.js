@@ -10,14 +10,14 @@ const App = () => {
             <nav className="nav-bar">
                 <Link className="text-link" to="/">Home</Link>
                 <Link className="text-link" to="/lyrics">Lyrics Generator</Link>
-                <Link className="text-link" to="/artist">Artist</Link>
+                <Link className="text-link" to="/artist">Artists</Link>
                 <button className="go-back" onClick={() => navigate(-1)}>Go Back</button>
             </nav>
             <div className="home-page">
                 <h1 aria-label="title">Musicly</h1>
                 <p>Welcome to Musicly, a website built for browsing different music. This app is currently in production and has limited features. 
-                    Visit the Lyrics Generator page to retrieve lyrics for a song. Or, view the Artist page to see information and discography for an
-                    artist; currently only displaying information for Logic. 
+                    Visit the Lyrics Generator page to retrieve lyrics for a song. Or, view the Artist page to create, delete, and view information
+                    for artists. Currently only Logic's discography can be displayed.
                 </p>
             </div>
             <div className="footer">
