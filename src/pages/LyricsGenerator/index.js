@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import useDidMountEffect from '../../Hooks/useDidMountEffect';
 
+import './styles.css';
+
 const LyricsGenerator = () => {
     const [artistInput, setArtistInput] = useState("");
     const [titleInput, setTitleInput] = useState("");
@@ -38,22 +40,27 @@ const LyricsGenerator = () => {
     }, [lyrics]);
     
     return (
-        <div className='lyrics-generator'>
-            <nav className="nav-bar">
-                <Link to="/">Home</Link>
-                <Link to="/lyrics">Lyrics Generator</Link>
-                <Link to="/artist">Artist</Link>
-                <button onClick={() => navigate(-1)}>Go back</button>
-            </nav>
-            <form onSubmit={handleFormSubmit}>
-                <h2>Insert an artist and title to retrieve the song's lyrics!</h2>
-                <label htmlFor='artist'>Artist</label>
-                <input type="text" id="artist" name="artist" placeholder='Enter an artist' value={artistInput} onChange={handleArtistInput}></input>
-                <label htmlFor='title'>Title</label>
-                <input type="text" id="title" name="title" placeholder='Enter a title' value={titleInput} onChange={handleTitleInput}></input>
-                <input type="submit" id="submit-btn" value="Get lyrics!"/>
-            </form>
-            <p className='lyrics-container'>{lyrics}</p>
+        <div className='lyrics-container'>
+            <div className='lyrics-generator'>
+                <nav className="nav-bar">
+                    <Link className="text-link" to="/">Home</Link>
+                    <Link className="text-link" to="/lyrics">Lyrics Generator</Link>
+                    <Link className="text-link" to="/artist">Artist</Link>
+                    <button onClick={() => navigate(-1)}>Go back</button>
+                </nav>
+                <form onSubmit={handleFormSubmit}>
+                    <h2>Insert an artist and title to retrieve the song's lyrics!</h2>
+                    <label htmlFor='artist'>Artist</label>
+                    <input type="text" className="text-input" id="artist" name="artist" placeholder='Enter an artist' value={artistInput} onChange={handleArtistInput}></input>
+                    <label htmlFor='title'>Title</label>
+                    <input type="text" className="text-input" id="title" name="title" placeholder='Enter a title' value={titleInput} onChange={handleTitleInput}></input>
+                    <input type="submit" id="submit-btn" value="Get lyrics!"/>
+                </form>
+                <p className='lyrics-p'>{lyrics}</p>
+            </div>
+            <div className="footer">
+                <p>Created by @kstephano. Built with React.</p>
+            </div>
         </div>
     )
 }

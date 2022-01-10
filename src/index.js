@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import App from './App';
-import { Artist, LyricsGenerator } from './components';
+import { Artist, LyricsGenerator } from './pages';
 import { artistData } from './data/artists';
 
 const rootElement = document.getElementById('root');
