@@ -1,4 +1,4 @@
-export const artistData = {
+export const artistData = [{
     name: "Logic",
     profileUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logic_Grandoozy_2018_%2845208197292%29_%28cropped%29.jpg/330px-Logic_Grandoozy_2018_%2845208197292%29_%28cropped%29.jpg",
     genre: "Rap",
@@ -35,4 +35,4 @@ export const artistData = {
             releaseDate: 2020
         }
     ]
-}
+}]
