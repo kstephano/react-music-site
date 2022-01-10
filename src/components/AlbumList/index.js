@@ -2,7 +2,7 @@ import React from "react";
 
 import ListItem from '../ListItem';
 
-const ArtistList = ({ discography }) => {
+const AlbumList = ({ discography }) => {
     console.log(discography)
     const listItems = discography.map(d => {
         return (
@@ -21,4 +21,4 @@ const ArtistList = ({ discography }) => {
     )
 }
 
-export default ArtistList;
+export default AlbumList;
