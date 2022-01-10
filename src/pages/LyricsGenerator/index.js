@@ -45,8 +45,8 @@ const LyricsGenerator = () => {
                 <nav className="nav-bar">
                     <Link className="text-link" to="/">Home</Link>
                     <Link className="text-link" to="/lyrics">Lyrics Generator</Link>
-                    <Link className="text-link" to="/artist">Artist</Link>
-                    <button onClick={() => navigate(-1)}>Go back</button>
+                    <Link className="text-link" to="/artist">Artists</Link>
+                    <button onClick={() => navigate(-1)}>Go Back</button>
                 </nav>
                 <form onSubmit={handleFormSubmit}>
                     <h2>Insert an artist and title to retrieve the song's lyrics!</h2>
